@@ -1,0 +1,70 @@
+<main>
+
+  <!-- Title section - BEGIN -->
+  <section id="title" class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <h1 class="text-center py-5 text-uppercase font-weight-bold text-light bg-danger">
+          <span class="border-bottom border-light pb-2">
+            Fo<i class="fab fa-angular"></i>m party <i class="fa fa-coffee"></i>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- Title section - END -->
+
+
+
+  <!-- Orders section - BEGIN -->
+  <section id="orders" class="container pt-3">
+    <div class="row">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills"
+             id="v-pills-tab"
+             role="tablist"
+             aria-orientation="vertical">
+          <a class="nav-link active"
+             id="v-pills-home-tab"
+             data-toggle="pill"
+             href="#v-pills-home"
+             role="tab"
+             aria-controls="v-pills-home"
+             aria-selected="true">
+            Make a order
+          </a>
+          <a class="nav-link"
+             id="v-pills-profile-tab"
+             data-toggle="pill"
+             href="#v-pills-profile"
+             role="tab"
+             aria-controls="v-pills-profile"
+             aria-selected="false">
+            Lists orders
+          </a>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="tab-content"
+             id="v-pills-tabContent">
+          <div class="tab-pane fade show active"
+               id="v-pills-home"
+               role="tabpanel"
+               aria-labelledby="v-pills-home-tab">
+            <app-orders></app-orders>
+          </div>
+          <div class="tab-pane fade"
+               id="v-pills-profile"
+               role="tabpanel"
+               aria-labelledby="v-pills-profile-tab">
+            <app-order-list></app-order-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Orders section - END -->
+
+  <router-outlet></router-outlet>
+
+</main>

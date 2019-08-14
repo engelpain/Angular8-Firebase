@@ -1,0 +1,8 @@
+#orders a {
+  color: var(--red);
+}
+
+#orders .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--red);
+  color: #fff;
+}
